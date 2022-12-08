@@ -25,4 +25,13 @@ final class StormViewerTests: XCTestCase {
         
         XCTAssertNotNil(sut.tableView)
     }
+    
+    func testTableViewHasCorrectAmountOfCells() {
+        let sut = ViewController()
+        
+        sut.loadViewIfNeeded()
+        let rowCount = sut.tableView.numberOfRows(inSection: 0)
+        
+        XCTAssertEqual(rowCount, sut.pictures.count)
+    }
 }
