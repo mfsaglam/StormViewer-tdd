@@ -31,6 +31,7 @@ class ViewController: UITableViewController {
     
     func configureUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Storm Viewer"
     }
             
     func addImages() {

@@ -60,14 +60,19 @@ final class StormViewerTests: XCTestCase {
     }
     
     func testViewControllerUsesLargeTitles() {
-        // given
         let sut = ViewController()
         let _ = UINavigationController(rootViewController: sut)
 
-        // when
         sut.loadViewIfNeeded()
 
-        // then
         XCTAssertTrue(sut.navigationController?.navigationBar.prefersLargeTitles ?? false)
+    }
+    
+    func testViewControllerHasCorrectTitle() {
+        let sut = ViewController()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.title, "Storm Viewer")
     }
 }
