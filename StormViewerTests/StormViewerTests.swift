@@ -34,4 +34,16 @@ final class StormViewerTests: XCTestCase {
         
         XCTAssertEqual(rowCount, sut.pictures.count)
     }
+    
+    func testEachCellHasTheCorrectText() {
+        let sut = ViewController()
+
+        sut.loadViewIfNeeded()
+
+        for (index, picture) in sut.pictures.enumerated() {
+            let indexPath = IndexPath(item: index, section: 0)
+            let cell = sut.tableView(sut.tableView, cellForRowAt: indexPath)
+            XCTAssertEqual(cell.textLabel?.text, picture)
+        }
+    }
 }

@@ -14,6 +14,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addImages()
+        configureTableView()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,9 +22,11 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = pictures[indexPath.row]
+        return cell
     }
-        
+            
     func addImages() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -34,6 +37,10 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+    }
+    
+    func configureTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
 }
