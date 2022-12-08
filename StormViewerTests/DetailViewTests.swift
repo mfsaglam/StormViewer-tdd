@@ -10,8 +10,12 @@ import XCTest
 
 final class DetailViewTests: XCTestCase {
 
-    func testImageExists() {
+    func testDetailImageExists() {
+        let sut = DetailViewController()
         
+        sut.loadViewIfNeeded()
+        
+        XCTAssertNotNil(sut.image)
     }
 
 }
