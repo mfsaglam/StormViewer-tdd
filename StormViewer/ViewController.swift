@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         addImages()
         configureTableView()
     }
@@ -26,6 +27,10 @@ class ViewController: UITableViewController {
         cell.textLabel?.text = pictures[indexPath.row]
         cell.accessoryType = .disclosureIndicator
         return cell
+    }
+    
+    func configureUI() {
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
             
     func addImages() {
