@@ -17,5 +17,13 @@ final class DetailViewTests: XCTestCase {
         
         XCTAssertNotNil(sut.image)
     }
+    
+    func testImageFillsTheScreen() {
+        let sut = DetailViewController()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.view, sut.image)
+    }
 
 }

@@ -16,5 +16,9 @@ class DetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func loadView() {
+        view = image
+    }
 
 }
