@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    let image = UIImageView()
+    let imageView = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,8 @@ class DetailViewController: UIViewController {
     }
     
     override func loadView() {
-        view = image
+        imageView.backgroundColor = .white
+        view = imageView
     }
 
 }

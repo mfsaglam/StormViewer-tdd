@@ -15,7 +15,7 @@ final class DetailViewTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertNotNil(sut.image)
+        XCTAssertNotNil(sut.imageView)
     }
     
     func testImageFillsTheScreen() {
@@ -23,7 +23,15 @@ final class DetailViewTests: XCTestCase {
         
         sut.loadViewIfNeeded()
         
-        XCTAssertEqual(sut.view, sut.image)
+        XCTAssertEqual(sut.view, sut.imageView)
+    }
+    
+    func testImageViewBackgroundIsWhite() {
+        let sut = DetailViewController()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.imageView.backgroundColor, .white)
     }
 
 }
