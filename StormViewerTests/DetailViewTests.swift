@@ -33,5 +33,13 @@ final class DetailViewTests: XCTestCase {
         
         XCTAssertEqual(sut.imageView.backgroundColor, .white)
     }
+    
+    func testImageViewContentModeIsAspectFit() {
+        let sut = DetailViewController()
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.imageView.contentMode, .scaleAspectFit)
+    }
 
 }
