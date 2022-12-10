@@ -41,5 +41,9 @@ final class DetailViewTests: XCTestCase {
         
         XCTAssertEqual(sut.imageView.contentMode, .scaleAspectFit)
     }
+    
+    func testDetailLoadsImage() {
+        
+    }
 
 }
