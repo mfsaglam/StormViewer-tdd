@@ -140,11 +140,11 @@
 		12D9B02D29423688004F8C41 /* StormViewer */ = {
 			isa = PBXGroup;
 			children = (
-				12CEB7DE29427B9E00E28720 /* DetailViewController.swift */,
 				12CEB7C72942696800E28720 /* Content */,
 				12D9B02E29423688004F8C41 /* AppDelegate.swift */,
 				12D9B03029423688004F8C41 /* SceneDelegate.swift */,
 				12D9B03229423688004F8C41 /* ViewController.swift */,
+				12CEB7DE29427B9E00E28720 /* DetailViewController.swift */,
 				12D9B03429423688004F8C41 /* Main.storyboard */,
 				12D9B03729423689004F8C41 /* Assets.xcassets */,
 				12D9B03929423689004F8C41 /* LaunchScreen.storyboard */,
