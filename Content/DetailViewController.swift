@@ -22,6 +22,10 @@ class DetailViewController: UIViewController {
         imageView.backgroundColor = .white
         imageView.contentMode = .scaleAspectFit
         view = imageView
+        
+        if let imageToLoad = selectedImage {
+            imageView.image = UIImage(named: imageToLoad)
+        }
     }
 
 }
