@@ -43,7 +43,16 @@ final class DetailViewTests: XCTestCase {
     }
     
     func testDetailLoadsImage() {
+        let filenameToTest = "nssl0049.jpg"
+        let imageToLoad = UIImage(named: filenameToTest, in: Bundle.main, compatibleWith: nil)
         
+        let sut = DetailViewController()
+        
+        sut.selectedImage = filenameToTest
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.imageView.image, imageToLoad)
     }
 
 }
