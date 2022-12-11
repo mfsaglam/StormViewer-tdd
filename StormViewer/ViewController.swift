@@ -31,6 +31,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailViewController()
+        vc.selectedImage = pictures[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
     
