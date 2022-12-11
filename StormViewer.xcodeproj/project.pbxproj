@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12BA130B29462E2C009E12AD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA130A29462E2C009E12AD /* MainCoordinator.swift */; };
 		12CEB7D22942696800E28720 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12CEB7C82942696800E28720 /* nssl0049.jpg */; };
 		12CEB7D32942696800E28720 /* nssl0046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12CEB7C92942696800E28720 /* nssl0046.jpg */; };
 		12CEB7D42942696800E28720 /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12CEB7CA2942696800E28720 /* nssl0091.jpg */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12BA130A29462E2C009E12AD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		12CEB7C82942696800E28720 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		12CEB7C92942696800E28720 /* nssl0046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0046.jpg; sourceTree = "<group>"; };
 		12CEB7CA2942696800E28720 /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				12D9B02E29423688004F8C41 /* AppDelegate.swift */,
 				12D9B03029423688004F8C41 /* SceneDelegate.swift */,
 				12D9B03229423688004F8C41 /* ViewController.swift */,
+				12BA130A29462E2C009E12AD /* MainCoordinator.swift */,
 				12CEB7DE29427B9E00E28720 /* DetailViewController.swift */,
 				12D9B03429423688004F8C41 /* Main.storyboard */,
 				12D9B03729423689004F8C41 /* Assets.xcassets */,
@@ -315,6 +318,7 @@
 				12D9B03329423688004F8C41 /* ViewController.swift in Sources */,
 				12D9B02F29423688004F8C41 /* AppDelegate.swift in Sources */,
 				12D9B03129423688004F8C41 /* SceneDelegate.swift in Sources */,
+				12BA130B29462E2C009E12AD /* MainCoordinator.swift in Sources */,
 				12CEB7DF29427B9E00E28720 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,7 +502,7 @@
 				INFOPLIST_FILE = StormViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,7 +530,7 @@
 				INFOPLIST_FILE = StormViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
